@@ -1,0 +1,177 @@
+\documentclass[10pt, a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc} % Character encoding
+\usepackage[T1]{fontenc}    % Font encoding
+\usepackage[english]{babel} % Language setting
+\usepackage[left=1.35cm, right=1.35cm, top=1.35cm, bottom=1.35cm]{geometry} % Margins
+\usepackage{hyperref} % Links
+\usepackage{graphicx}
+\usepackage{enumitem} % Lists
+\usepackage{titlesec} % Section styles
+\usepackage{xcolor} % Colors
+\usepackage{lmodern} % Modern font
+
+% --- FONT SETTINGS ---
+\renewcommand{\familydefault}{\sfdefault} % Sans-Serif for the whole document
+
+% --- COLORS ---
+\definecolor{darkblue}{RGB}{0, 70, 140} 
+
+% --- SECTION STYLES ---
+\titleformat{\section}
+  {\large\bfseries\color{darkblue}}
+  {}{0em}
+  {}
+  [\titlerule]
+
+% --- SPACING ---
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.12em}
+\linespread{0.94}
+\titlespacing*{\section}{0pt}{0.35em}{0.18em}
+\setlist[itemize]{leftmargin=1.1em, itemsep=0.1em, topsep=0.1em, parsep=0pt}
+
+% --- KEYWORD / TAG STYLE ---
+\newcommand{\skilltag}[1]{%
+  \begingroup
+  \setlength{\fboxsep}{1.8pt}%
+  \fcolorbox{black!35}{black!3}{\footnotesize\strut #1}%
+  \endgroup
+}
+
+\begin{document}
+\noindent
+
+% --- HEADER ---
+\begin{minipage}[t]{0.72\textwidth}
+    {\LARGE \textbf{Mustafa Emir CERAN}} \\[0.12cm]
+    \href{mailto:24118080702@gazi.edu.tr}{\textbf{Email:} 24118080702@gazi.edu.tr} \quad
+    \textbf{Phone:} +90 552 286 26 29 \\
+    \textbf{Location: } Ankara, Turkey \\ 
+    \href{https://www.linkedin.com/in/mustafa-emir-ceran-38a2121a7}{\textbf{LinkedIn:} linkedin.com/in/mustafa-emir-ceran-38a2121a7} \quad
+    \href{https://github.com/emirceran23}{\textbf{GitHub:} github.com/emirceran23}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.24\textwidth}
+    \raggedleft
+    \IfFileExists{profil-foto.jpg}{%
+        \resizebox{!}{2.5cm}{\includegraphics{profil-foto.jpg}}
+    }{}
+\end{minipage}
+
+\vspace{0.12cm}
+{\small \textit{Computer Engineering student at Gazi University with professional R\&D software experience in Defense Technologies (HAVELSAN) and Health Technologies (HealthTech). Specializing in integrating deep learning models (YOLO, MediaPipe) into Unity and real-time mobile/web applications, with a strong focus on Edge AI, Computer Vision, Multi-Agent LLM Orchestration (LangGraph, Qdrant RAG), and Systems Programming.}}
+
+% --- TECHNICAL SKILLS ---
+\section{Technical Skills}
+\textbf{Programming Languages:}\\
+\skilltag{Python} \skilltag{C\#} \skilltag{Kotlin} \skilltag{Java} \skilltag{Go} \skilltag{JavaScript} \skilltag{TypeScript}\\[0.25em]
+\textbf{Artificial Intelligence \& LLM Orchestration:}\\
+\skilltag{PyTorch} \skilltag{LangGraph} \skilltag{LangChain} \skilltag{Qdrant RAG} \skilltag{Tiered LLMs} \skilltag{Prompt Caching} \skilltag{pgvector}\\[0.25em]
+\textbf{Computer Vision \& Perception:}\\
+\skilltag{YOLOv11} \skilltag{MediaPipe} \skilltag{OpenCV} \skilltag{Reinforcement Learning} \skilltag{Camera2 API} \skilltag{Pinhole Optics}\\[0.25em]
+\textbf{Systems, Backend \& Cloud Operations:}\\
+\skilltag{FastAPI} \skilltag{Flask} \skilltag{REST API} \skilltag{WebSockets} \skilltag{PostgreSQL} \skilltag{Redis Streams} \skilltag{MinIO} \skilltag{Docker} \skilltag{CI/CD Pipelines} \skilltag{BLE HCI Drivers} \skilltag{JWT}\\[0.25em]
+\textbf{Mobile \& Edge AI Deployment:}\\
+\skilltag{Unity (C\#)} \skilltag{React Native (Expo)} \skilltag{Native Android (Kotlin)} \skilltag{Native iOS Plugins} \skilltag{Edge AI} \skilltag{On-Device Inference}
+
+% --- EDUCATION ---
+\section{Education}
+
+\textbf{Gazi University} \hfill Ankara, Turkey \\
+\textit{Bachelor of Science in Computer Engineering} \hfill Sep 2024 -- Present \\
+GPA: 3.36 / 4.00 \hfill \textbf{Expected Graduation:} 2027
+
+\vspace{0.08cm}
+
+\textbf{Abdullah G\"{u}l University} \hfill Kayseri, Turkey \\
+\textit{Bachelor of Science in Computer Engineering (1st Year, lateral transfer -- GPA: 3.57)} \hfill Sep 2023 -- Jul 2024\\
+\textit{Achieved B2 level Arabic proficiency through 1-year intensive program and training in Amman, Jordan (Ewan Institute)}
+
+% --- PROFESSIONAL EXPERIENCE ---
+\section{Professional Experience}
+
+\textbf{HAVELSAN} \hfill Ankara, Turkey \\
+\textit{Software Engineering Intern -- Emerging Technologies Team} \hfill Jul 2026 -- Aug 2026
+\begin{itemize}
+    \item \textbf{Cockpit Speech Diarization:} Orchestrated a cockpit speech-to-text (STT) pipeline using VibeVoice STT and WavLM embeddings for role classification (PF, PM, ATC, COMPUTER).
+    \item \textbf{Git-Style Versioning Engine:} Architected an immutable PostgreSQL append-only commit versioning layer (HEAD copy + Commits snapshot table) preventing data loss.
+    \item \textbf{Multi-GPU Cluster Operations:} Distributed heavy speech recognition workloads across H100 baseline and H200 burst GPU pods with acoustic drift compensation.
+    \item \textbf{Low-Latency Smartwatch Telemetry:} Engineered a 25Hz bio-telemetry ingestion engine from Garmin smartwatches over Bluetooth Low Energy (BLE).
+    \item \textbf{Hardware-Level OS Bypass:} Bypassed Windows WinRT BLE stack limits by executing direct \texttt{libusb} raw HCI commands via \texttt{Zadig} + \texttt{bumble} on TP-Link UB500 (RTL8761BU).
+    \item \textbf{Connect IQ Packet Parsing:} Built Connect IQ (API 3.1.0) custom raw packet parsers with candidate scan blacklisting state machine for 10s timeout recovery.
+\end{itemize}
+
+\vspace{0.12cm}
+
+\textbf{Items Health Technologies} \hfill Ankara, Turkey \\
+\textit{Software Development Specialist} \hfill Nov 2024 -- Jun 2025
+\begin{itemize}
+    \item \textbf{CAN-EYE Diagnostic Application:} Architected a unified Unity diagnostic app deployed across iOS, Android, macOS, and Windows for automated strabismus screening.
+    \item \textbf{Native Camera Plugins:} Developed custom native Kotlin/Camera2 (Android) and iOS camera plugins for real-time 3D head pose and distance estimation.
+    \item \textbf{YOLOv11 Semantic Segmentation:} Formulated an 8,601-sample eye image dataset and trained a YOLOv11 semantic segmentation model achieving an F1 score of 0.93.
+    \item \textbf{Adaptive Vision Suite:} Programmed Snellen/Tumbling E test modules with dynamic DPI \& distance calibration across Standalone, Doctor (Socket.IO), and Kiosk modes.
+    \item \textbf{Mobile CI/CD Deployment:} Managed automated build, signing, and release pipelines for production deployment to the Apple App Store and Google Play Store.
+\end{itemize}
+
+% --- PROJECTS ---
+\section{Projects}
+
+\textbf{ihlamurv2 (Multi-Agent Algorithmic Trading System)} \hfill \textit{Quantitative Trading Pipeline} \hfill 2026
+\begin{itemize}
+    \item \textbf{5-Plane Multi-Agent System:} Orchestrated an autonomous quantitative trading pipeline in Python 3.12 for Bybit Testnet over a Redis Streams event bus.
+    \item \textbf{Qdrant Vector RAG Store:} Integrated a Qdrant vector database for context retrieval, coupling specialized analysis agents with decision-making modules.
+    \item \textbf{Deterministic Latency Router:} Formulated a rule-based modality router enforcing sub-2000ms latency budgets and shadow pipeline evaluation.
+    \item \textbf{Tiered LLM Architecture:} Structured a 4-tier cost model (T0 code to T3 Opus reasoning) connected via an OpenAI-compatible subscription gateway (300 call/day limit).
+    \item \textbf{Risk Management \& Circuit Breaker:} Implemented a Risk Officer for risk-adjusted sizing, 3x max leverage, and $-5\%$ daily loss halts with an atomic Redis/file kill switch.
+    \item \textbf{Idempotent Order Execution:} Built an LLM-free OrderManager with atomic TP/SL (\texttt{tpslMode="Full"}), 8 req/s token buckets, and UUIDv5 \texttt{orderLinkId} deduplication.
+\end{itemize}
+
+\vspace{0.12cm}
+
+\textbf{Lagent (Multi-Agent Legal Contract Review System)} \hfill \textit{Full-Stack AI Application} \hfill Mar 2024 -- May 2024
+\begin{itemize}
+    \item \textbf{LangGraph Multi-Agent Engine:} Orchestrated 3 specialized AI agents (Clause, Risk, Negotiation) for automated contract risk scoring and counter-proposals.
+    \item \textbf{pgvector Semantic Search:} Integrated pgvector RAG for policy-driven risk assessment with multi-dimensional scoring and deterministic rule validation.
+    \item \textbf{Full-Stack \& WebSocket Pipeline:} Deployed Next.js/React frontend with FastAPI backend, real-time WebSockets, redline diff viewer, and automated PDF/DOCX exports.
+    \item \textbf{Production Security \& Storage:} Implemented JWT authentication, RBAC, Redis caching, and MinIO object storage for secure contract management.
+\end{itemize}
+
+\vspace{0.12cm}
+
+\textbf{SentryFit (AI-Powered Fitness \& Pose Tracking Platform)} \hfill \textit{Mobile AI Application} \hfill 2025 -- 2026
+\begin{itemize}
+    \item \textbf{On-Device Pose Tracking:} Deployed an ST-GCN exercise pose analysis model directly on-device in React Native/Expo for low-latency feedback without cloud cost.
+    \item \textbf{Vision Transformer Nutrition Engine:} Integrated Vision Transformer models (SAM3, Florence) for semantic food segmentation, calorie estimation, and OpenFood SQLite search.
+\end{itemize}
+
+% --- STUDENT CLUBS ---
+\section{Student Clubs}
+\textbf{Gazi University Artificial Intelligence Society} \hfill Oct 2024 -- May 2025\\
+\textit{Vice Chair of Education and Projects Committee}
+\begin{itemize}
+    \item Showcased AI event projects using Unity ML-Agents for reinforcement learning applications and led student AI workshops.
+\end{itemize}
+
+% --- LANGUAGES ---
+\section{Languages}
+{\small Turkish (Native) \textbullet\ English (C1, Y\"{O}KD\.{I}L: 95) \textbullet\ German (C1, Goethe-Zertifikat) \textbullet\ Arabic (Intermediate)}
+
+% --- CERTIFICATES ---
+\section{Certificates}
+\begin{itemize}
+    \item \textbf{Y\"{O}KD\.{I}L English Exam} -- \"{O}SYM (Score: 95 / 100, Advanced English C1)
+    \item \textbf{Goethe-Zertifikat C1} -- Goethe Institut (Advanced German Proficiency) \href{https://drive.google.com/file/d/1cp37JZdfWIg2Qls7ufMm9iRPQu8bJT77/view?usp=sharing}{\textcolor{darkblue}{View certificate}}
+    \item \textbf{English Proficiency Certificate CEFR B2} -- Abdullah G\"{u}l University \href{https://drive.google.com/file/d/1mAhNtJmdMGiNpowb0sVMybRPiWGNEBsa/view?usp=sharing}{\textcolor{darkblue}{View certificate}}
+\end{itemize}
+
+% --- REFERENCES ---
+\section{References}
+{\small
+\textbf{Prof. Dr. \c{S}eref Sa\u{g}\i ro\u{g}lu} (Gazi University, Faculty of Engineering) -- \href{mailto:ss@gazi.edu.tr}{ss@gazi.edu.tr} \textbar\ +90 532 134 07 07\\
+\textbf{Tolga Erol} (HAVELSAN, Emerging Technologies Team Lead) -- \href{mailto:terol@havelsan.com.tr}{terol@havelsan.com.tr} \textbar\ +90 533 636 05 27\\
+\textbf{Assoc. Prof. Dr. Sara Erol} (AYBU Faculty of Medicine, Child Health) -- \href{mailto:saraerol@aybu.edu.tr}{saraerol@aybu.edu.tr} \textbar\ +90 505 858 43 86
+}
+
+\end{document}

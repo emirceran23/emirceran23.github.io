@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Emir Ceran</title>
+    <meta name="description" content="Detailed technical breakdown, system architecture, and core implementation of projects by Emir Ceran.">
+    
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="project-detail-body">
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo" id="detail-logo">
+                emir.ceran<span class="logo-dot">_</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#projects" class="active" id="detail-back-link">← Back to Showcase</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="lang-toggle-btn" id="lang-toggle" aria-label="Switch language">
+                    <span class="lang-badge" id="lang-badge">TR</span>
+                </button>
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <!-- Sun Icon (shown in dark mode) -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                    <!-- Moon Icon (shown in light mode) -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container project-detail-container" id="project-detail-main">
+        <!-- Dynamic content will be injected by app.js -->
+        <div class="detail-loading" id="detail-loading">
+            <p>Loading project technical breakdown...</p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-wrapper">
+            <p class="footer-text">&copy; 2026 Mustafa Emir Ceran </p>
+            <ul class="footer-socials">
+                <li><a href="https://github.com/emirceran23" target="_blank" rel="noopener noreferrer" id="footer-github">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/mustafa-emir-ceran-38a2121a7" target="_blank" rel="noopener noreferrer" id="footer-linkedin">LinkedIn</a></li>
+                <li><a href="mailto:contact@emirceran.com" id="footer-email">Email</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true">
+        <div class="lightbox-overlay" id="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close image preview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="lightbox-image-container">
+                <img src="" alt="" id="lightbox-img" class="lightbox-img">
+            </div>
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- Core Script -->
+    <script src="app.js"></script>
+</body>
+</html>
