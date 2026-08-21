@@ -41,7 +41,7 @@ const UI_TEXT = {
         aboutBioHeading: "Biography",
         aboutBioText: "Computer Engineering student at Gazi University with professional experience in Health Technologies (HealthTech) and Defense Technologies. Specializing in integrating deep learning models (YOLO, MediaPipe) into Unity and real-time mobile/web applications, with a strong focus on Edge AI, Computer Vision, Multi-Agent LLM Orchestration, and Systems Programming. Dedicated to engineering robust, low-latency, and scalable systems.",
         aboutExpHeading: "Professional Experience",
-        roleHavelsan: "Software Engineering Intern — Emerging Technologies Team",
+        roleHavelsan: "Intern — New Technologies Team",
         descHavelsan: "Engineered two high-performance defense R&D software architectures: 1) HALP LabelVoice Cockpit Voice Analytics — Cockpit STT pipeline with VibeVoice & WavLM speaker diarization (PF/PM/ATC), multi-GPU (H100/H200) acoustic drift compensation, and an immutable PostgreSQL Git-style commit versioning engine. 2) HALP Garmin BLE Telemetry System — A raw HCI BLE driver (bypassing Windows WinRT via libusb & Zadig on Realtek RTL8761BU) streaming 25Hz bio-data with Connect IQ packet parsers.",
         roleItems: "Software Development Specialist",
         descItems: "Engineered a unified Unity diagnostic application for strabismus detection across iOS, Android, macOS, and Windows. Developed custom Kotlin/Camera2 & iOS native camera plugins, built real-time head pose/distance estimation algorithms, created a 8.6k sample eye image dataset, trained a YOLOv11 semantic segmentation model (F1 score 0.93), and designed scalable PostgreSQL database backend APIs. Presented technical infrastructure at TÜBİTAK project defenses.",
@@ -107,8 +107,8 @@ const UI_TEXT = {
         aboutBioHeading: "Biyografi",
         aboutBioText: "Gazi Üniversitesi Bilgisayar Mühendisliği öğrencisi. Sağlık Teknolojileri (HealthTech) ve Savunma Sanayii alanında profesyonel Ar-Ge deneyimine sahibim. Derin öğrenme modellerinin (YOLO, MediaPipe) Unity, mobil ve web uygulamalarına entegrasyonu; Edge AI, Bilgisayarlı Görü (Computer Vision), Çoklu Ajanlı LLM Mimarileri ve Sistem Programlama konularında uzmanlaşıyorum. Verimli, düşük gecikmeli ve ölçeklenebilir sistemler inşa etmeye odaklanıyorum.",
         aboutExpHeading: "Profesyonel Deneyim",
-        roleHavelsan: "Yazılım Mühendisliği Stajyeri — İleri Teknolojiler Ekibi",
-        descHavelsan: "HAVELSAN İleri Teknolojiler Ekibi bünyesinde iki yüksek performanslı savunma Ar-Ge yazılım mimarisi geliştirdi: 1) HALP LabelVoice Kokpit Ses Analitiği — VibeVoice STT, WavLM konuşmacı rol ayrıştırma (PF/PM/ATC), çoklu GPU (H100/H200) ses işleme hattı ve veri kaybını önleyen PostgreSQL Git-tarzı değiştirilemez commit motoru. 2) HALP Garmin BLE Biyometri Sistemi — Windows WinRT yığınını baypas eden ham HCI BLE sürücüsü (libusb/bumble + RTL8761BU) ile 25Hz Garmin biyometri veri alma altyapısı.",
+        roleHavelsan: "Stajyer — Yeni Teknolojiler Takımı",
+        descHavelsan: "HAVELSAN Yeni Teknolojiler Takımı bünyesinde iki yüksek performanslı savunma Ar-Ge yazılım mimarisi geliştirdi: 1) HALP LabelVoice Kokpit Ses Analitiği — VibeVoice STT, WavLM konuşmacı rol ayrıştırma (PF/PM/ATC), çoklu GPU (H100/H200) ses işleme hattı ve veri kaybını önleyen PostgreSQL Git-tarzı değiştirilemez commit motoru. 2) HALP Garmin BLE Biyometri Sistemi — Windows WinRT yığınını baypas eden ham HCI BLE sürücüsü (libusb/bumble + RTL8761BU) ile 25Hz Garmin biyometri veri alma altyapısı.",
         roleItems: "Yazılım Geliştirme Uzmanı",
         descItems: "Şaşılık tespiti için iOS, Android, macOS ve Windows platformlarında çalışan ortak bir Unity tanı uygulaması geliştirdi. Özel Kotlin/Camera2 ve iOS yerel kamera eklentileri yazdı, gerçek zamanlı kafa pozisyonu ve mesafe tahmin algoritmaları oluşturdu. 8.6k göz görüntüsü veri seti hazırlayıp YOLOv11 anlamsal segmentasyon modeli eğitti (F1 skoru: 0.93) ve PostgreSQL tabanlı RESTful arka plan servisleri tasarladı. Sistem mimarisini TÜBİTAK proje savunmalarında sundu.",
         roleGaziAi: "Eğitim ve Projeler Komitesi Başkan Yardımcısı",
@@ -671,8 +671,8 @@ Klinik muayene protokollerini dijitalleştirmek amacıyla tasarlanan CAN-EYE; bi
         en: {
             title: "HAVELSAN — Low-Latency BLE Telemetry & Cockpit Speech Analytics",
             categoryLabel: "Systems & Defense R&D",
-            shortDesc: "R&D software engineering projects developed at HAVELSAN's Emerging Technologies Team. Features a raw HCI BLE smartwatch telemetry driver for 25Hz bio-data streaming and a cockpit voice speech-to-text (STT) optimization pipeline with Git-style transcript versioning.",
-            overview: `During my software engineering internship within HAVELSAN's Emerging Technologies Team, I engineered two high-performance R&D software architectures:
+            shortDesc: "R&D software engineering projects developed at HAVELSAN's New Technologies Team. Features a raw HCI BLE smartwatch telemetry driver for 25Hz bio-data streaming and a cockpit voice speech-to-text (STT) optimization pipeline with Git-style transcript versioning.",
+            overview: `During my software engineering internship within HAVELSAN's New Technologies Team, I engineered two high-performance R&D software architectures:
 
 1. HALP Garmin BLE Telemetry System: A low-latency 25Hz bio-telemetry ingestion engine streaming accelerometer and heart-rate sensor data from Garmin smartwatches to desktop PC hardware over Bluetooth Low Energy.
 2. HALP LabelVoice Speech-to-Text & Cockpit Analytics Engine: An end-to-end cockpit voice transcription optimization system that transcribes flight audio, classifies speaker roles (PF / PM / ATC / COMPUTER), and maintains immutable Git-style transcript version history.`,
@@ -687,7 +687,7 @@ Klinik muayene protokollerini dijitalleştirmek amacıyla tasarlanan CAN-EYE; bi
   - Implemented an append-only Git-style commit versioning layer (HEAD working copy + Commits snapshot table) preventing data loss during transcript editing.
   - Integrated VibeVoice STT, WavLM speaker embeddings, CTC alignment, and acoustic speech drift compensation algorithms.
   - Distributed long-duration audio chunking workloads across H100 baseline and H200 burst GPU pods without VRAM OOM exceptions.`,
-            metrics: "HAVELSAN Emerging Technologies R&D · 25Hz Low-Latency BLE Streaming · Raw HCI Driver (libusb) · VibeVoice STT & WavLM Alignment · Git-Style Commit Snapshot Versioning",
+            metrics: "HAVELSAN New Technologies R&D · 25Hz Low-Latency BLE Streaming · Raw HCI Driver (libusb) · VibeVoice STT & WavLM Alignment · Git-Style Commit Snapshot Versioning",
             features: [
                 {
                     feature: "Raw HCI BLE Driver & Windows OS Bypass",
@@ -719,8 +719,8 @@ Klinik muayene protokollerini dijitalleştirmek amacıyla tasarlanan CAN-EYE; bi
         tr: {
             title: "HAVELSAN — Düşük Gecikmeli BLE Biyometri & Kokpit Ses Analitiği",
             categoryLabel: "Sistem Programlama & Savunma Ar-Ge",
-            shortDesc: "HAVELSAN İleri Teknolojiler Ekibi bünyesinde geliştirilen Ar-Ge yazılım projeleri. 25Hz biyometrik veri akışı için ham HCI BLE sürücüsü ve Git-tarzı versiyonlama içeren kokpit konuşma analizi (STT) optimizasyon hattı sunar.",
-            overview: `HAVELSAN İleri Teknolojiler Ekibi bünyesindeki yazılım mühendisliği stajım boyunca iki kritik yüksek performanslı Ar-Ge mimarisi geliştirdim:
+            shortDesc: "HAVELSAN Yeni Teknolojiler Takımı bünyesinde geliştirilen Ar-Ge yazılım projeleri. 25Hz biyometrik veri akışı için ham HCI BLE sürücüsü ve Git-tarzı versiyonlama içeren kokpit konuşma analizi (STT) optimizasyon hattı sunar.",
+            overview: `HAVELSAN Yeni Teknolojiler Takımı bünyesindeki yazılım mühendisliği stajım boyunca iki kritik yüksek performanslı Ar-Ge mimarisi geliştirdim:
 
 1. HALP Garmin BLE Biyometri Sistemi: Garmin akıllı saatlerinden PC donanımına Bluetooth Low Energy (BLE) üzerinden ivmeölçer ve nabız sensör verilerini 25Hz frekansında aktaran düşük gecikmeli veri alma motoru.
 2. HALP LabelVoice Ses-Metin (STT) & Kokpit Analitiği Engine: Uçuş oturum seslerini metne dönüştüren, konuşmacı rollerini (PF / PM / ATC / COMPUTER) sınıflandıran ve Git-tarzı değiştirilemez commit geçmişi tutan kokpit ses analizi optimizasyon altyapısı.`,
@@ -735,7 +735,7 @@ Klinik muayene protokollerini dijitalleştirmek amacıyla tasarlanan CAN-EYE; bi
   - Etiket düzenlemede veri kaybını önleyen append-only Git-tarzı commit versiyon katmanı (HEAD çalışma kopyası + Commits snapshot tablosu) tasarladı.
   - VibeVoice STT, WavLM konuşmacı gömmeleri (embeddings), CTC akustik hizalama ve konuşma kayması düzeltme algoritmalarını entegre etti.
   - Uzun ses işleme yüklerini H100 baseline ve H200 burst GPU havuzlarına VRAM OOM hatası olmadan dağıttı.`,
-            metrics: "HAVELSAN İleri Teknolojiler Ar-Ge · 25Hz Düşük Gecikmeli BLE Akışı · Ham HCI Sürücüsü (libusb) · VibeVoice STT & WavLM Hizalama · Git-Tarzı Commit Versiyonlama",
+            metrics: "HAVELSAN Yeni Teknolojiler Ar-Ge · 25Hz Düşük Gecikmeli BLE Akışı · Ham HCI Sürücüsü (libusb) · VibeVoice STT & WavLM Hizalama · Git-Tarzı Commit Versiyonlama",
             features: [
                 {
                     feature: "Ham HCI BLE Sürücüsü & Windows İşletim Sistemi Baypası",
